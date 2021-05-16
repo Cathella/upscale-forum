@@ -1,10 +1,10 @@
 <%= form_for @forum_thread do |form| %>
-  <div class="form-group">
+  <div class="form-group mb-3">
     <%= form.text_field :subject, placeholder: "Subject", class: "form-control" %>
   </div>
 
   <%= form.fields_for :forum_posts do |post| %>
-    <div class="form-group">
+    <div class="form-group mb-3">
       <%= post.text_area :body, placeholder: "Add a comment", class: "form-control" %>
     </div>
   <% end %>

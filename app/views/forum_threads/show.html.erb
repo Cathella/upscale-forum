@@ -1,6 +1,6 @@
-<h1><%= @forum_thread.subject %></h1>
+<h1 class="fw-bold mt-5"><%= @forum_thread.subject %></h1>
 <p>Created by <%= @forum_thread.user.email %></p>
-
+<hr />
 <div class="">
   <%= render @forum_thread.forum_posts %>
 </div>

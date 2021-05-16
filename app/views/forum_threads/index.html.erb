@@ -1,7 +1,7 @@
-<div>
-  <%= link_to "New Thread", new_forum_thread_path %>
+<div class="pb-4 d-flex justify-content-end">
+  <%= link_to "New Thread", new_forum_thread_path, class: "btn btn-success" %>
 </div>
 
-<h1>Forum Threads</h1>
+<h1 class="fw-bold mb-4">Forum Threads</h1>
 
 <%= render @forum_threads %>
