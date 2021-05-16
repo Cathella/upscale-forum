@@ -15,4 +15,9 @@
 class ForumThread < ApplicationRecord
   has_many :forum_posts
   belongs_to :user
+
+  accepts_nested_attributes_for :forum_posts
+
+  validates :subject, presence: true
+  validates_associated :forum_posts
 end
