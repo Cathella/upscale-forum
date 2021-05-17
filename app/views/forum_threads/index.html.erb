@@ -1,0 +1,12 @@
+<div class="pb-3 d-flex justify-content-end">
+  <div class="">
+    <%= search_form_for @q, html: { class: "form-inline me-4" } do |form| %>
+      <%= form.search_field :subject_or_forum_posts_body_cont, placeholder: "Search...", class: "form-control" %>
+    <% end %>
+  </div>
+  <%= link_to "New Thread", new_forum_thread_path, class: "btn btn-success" %>
+</div>
+
+<h1 class="fw-bold mb-4 border-bottom pb-2">Forum Threads</h1>
+
+<%= render @forum_threads %>
