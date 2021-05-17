@@ -4,12 +4,12 @@
   </div>
 
   <%= form.fields_for :forum_posts do |post| %>
-    <div class="form-group mb-3">
-      <%= post.text_area :body, placeholder: "Add a comment", class: "form-control" %>
+    <div class="form-group mb-4">
+      <%= post.text_area :body, placeholder: "Add a comment", rows: 10, class: "form-control" %>
     </div>
   <% end %>
 
   <div class="form-group">
-    <%= form.submit %>
+    <%= form.submit "Create Thread", class: "btn btn-primary" %>
   </div>
 <% end %>
